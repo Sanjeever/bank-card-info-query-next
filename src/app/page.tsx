@@ -43,7 +43,8 @@ export default function Home() {
   }
 
   function handleChange(event: React.FormEvent<HTMLInputElement>) {
-    setForm({ ...form, cardNo: event.currentTarget.value })
+    const value = event.currentTarget.value
+    setForm({ ...form, cardNo: value.replace(/[^0-9.]/g, '') })
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -66,6 +67,7 @@ export default function Home() {
       <form className='flex gap-4' onSubmit={handleSubmit}>
         <input
           onChange={handleChange}
+          value={form.cardNo}
           type='text'
           placeholder='请输入银行卡号'
           className='input input-bordered w-full max-w-xs'
