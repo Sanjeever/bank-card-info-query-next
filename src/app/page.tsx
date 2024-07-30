@@ -70,7 +70,9 @@ export default function Home() {
           placeholder='请输入银行卡号'
           className='input input-bordered w-full max-w-xs'
         />
-        <button className='btn' type='submit'>查询</button>
+        <button className='btn' type='submit'>
+          查询
+        </button>
       </form>
 
       <CSSTransition in={hasData} timeout={300} classNames='fade' unmountOnExit>
