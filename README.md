@@ -32,6 +32,9 @@ pnpm run build
 ## Thanks
 
 - [cnbankcard](https://github.com/digglife/cnbankcard)
+- [daisyui](https://github.com/saadeghi/daisyui)
+- [react-hot-toast](https://github.com/timolins/react-hot-toast)
+- [react-transition-group](https://github.com/reactjs/react-transition-group)
 
 ## LICENSE
 
